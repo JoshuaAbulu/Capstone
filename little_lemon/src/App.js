@@ -1,16 +1,30 @@
 import './App.css';
-import Header from './Components/Header';
-import Nav from './Components/Nav';
+import whale from './img/whale.jpg'
+import { Routes, Route, Link } from "react-router-dom";
 import Main from './Components/Main';
-import Footer from './Components/Footer';
+import About from './Components/About';
+import Menu from './Components/Menu';
+import Reservations from './Components/Reservations';
+import Order from './Components/Order';
+import Login from './Components/Login';
+import Header from './Components/Header';
+import BookingPage from './Components/BookingPage';
+
 
 function App() {
   return (
     <>
       <Header />
-      <Nav />
-      <Main />
-      <Footer />
+
+        <Routes>
+            <Route path="/" element={<Main />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/menu" element={<Menu />}/>
+            <Route path="/reservations" element={<Reservations />}/>
+            <Route path="/order" element={<Order />}/>
+            <Route path="/login" element={<Login />}/>
+            <Route path="/table-reserve" element={<BookingPage />}/>
+        </Routes>
     </>
   );
 }
