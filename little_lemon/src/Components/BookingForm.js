@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import Main from "./Main";
 
 
-const BookingForm = () => {
+const BookingForm = (props) => {
 
-const [availableTimes, setAvailableTimes] = useState(['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'])
+// const [availableTimes, setAvailableTimes] = useState(['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'])
 
 
 const [date, setDate] = useState('')
@@ -41,7 +42,7 @@ const validForm = () => {
    <input type="date" id="res-date" className="inputtableform" value={date} onChange={(e) => {setDate(e.target.value)}}/>
    <label htmlFor="res-time">Choose time</label>
    <select id="res-time " value={time} onChange={(e) => {setTime(e.target.value)}}>
-    {availableTimes.map((times) => (
+    {props.availableTimes.map((times) => (
         <option key={times} value={times}>{times}</option>
     ))}
       {/* <option>17:00</option>

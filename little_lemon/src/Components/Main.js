@@ -1,8 +1,43 @@
 import kushina from '../img/Kushina.png'
 import { Link } from 'react-router-dom';
 import Specials from './Specials';
+import BookingForm from './BookingForm';
+import { useState, useReducer, useEffect } from 'react';
 
 const Main = () => {
+
+    // const [availableTimes, setAvailableTimes] = useState(['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'])
+
+    const initializeTimes = () => {
+        return ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00'];
+
+        useEffect(() => {
+            fetch('"https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js"')
+            .then(res => {
+                return res.json();
+            })
+            .then(data => {
+                
+            })
+        })
+      };
+
+      const updateTimes = (date) => {
+        
+      };
+
+    const timeReducer = (state, action) => {
+        switch (action.type) {
+            case 'UPDATE_TIMES':
+            return state;
+            default:
+            return state;
+        }
+    }
+
+    const [availableTimes, dispatch] = useReducer(timeReducer, initializeTimes)
+
+
     return ( 
         <main>
             <section className="title-page">
@@ -22,6 +57,11 @@ const Main = () => {
             <section className="special">
             <Specials />
             </section>
+
+            <BookingForm 
+            availableTimes = {availableTimes}
+            dispatch = {dispatch}
+            />
         </main>
      );
 }
