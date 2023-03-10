@@ -9,6 +9,7 @@ import Order from './Components/Order';
 import Login from './Components/Login';
 import Header from './Components/Header';
 import BookingPage from './Components/BookingPage';
+import BookingForm from './Components/BookingForm';
 
 
 function App() {
