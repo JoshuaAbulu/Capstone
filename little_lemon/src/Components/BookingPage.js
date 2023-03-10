@@ -12,6 +12,7 @@ const BookingPage = () => {
     };
 
     return ( 
+      <div>
         <div className="container">
              <div ref={bookingFormRef}>
             <BookingForm 
@@ -19,6 +20,7 @@ const BookingPage = () => {
             // dispatch = {dispatch}
             />
             </div>
+        </div>
         </div>
      );
 }

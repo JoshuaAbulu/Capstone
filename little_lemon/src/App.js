@@ -18,8 +18,8 @@ function App() {
       <Header />
 
         <Routes>
-            <Route path="/" element={<Main />}/>
-            <Route path="/about" element={<About />}/>
+            <Route exact path="/" element={<Main />}/>
+            {/* <Route path="/about" element={<About />}/> */}
             <Route path="/menu" element={<Menu />}/>
             <Route path="/reservations" element={<Reservations />}/>
             <Route path="/order" element={<Order />}/>

@@ -1,15 +1,20 @@
 body {
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .container {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* width: 70%;
+    margin: auto;
+    overflow: hidden; */
 }
 
 header {
-    min-height: 120px;
+    min-height: 30px;
 }
 
 header img {
@@ -30,6 +35,11 @@ ul {
 
 
 .navi {
+    text-decoration: none;
+    color: blue;
+}
+
+.navi3 {
     text-decoration: none;
     color: blue;
 }
@@ -55,7 +65,7 @@ ul {
 }
 
 .title-page {
-    min-height: 300px;
+    height: 400px;
     background-color: #495E57;
     margin-left: 0;
     margin-right: 0;
@@ -79,9 +89,41 @@ ul {
     color: white;
 }
 
+.tile4 {
+    font-size: 25px;
+    margin-top: 0;
+    padding-top: 0;
+    color: #495E57;
+}
+
+.tile5 {
+    font-size: 60px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #495E57;
+}
+
+.art-pic-div {
+    height: 90%;
+    width: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.art-pic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
 .article1 {
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+.art {
+    margin-left: 40px;
 }
 
 .gen-but {
@@ -104,6 +146,13 @@ ul {
     margin-top: 40px;
 }
 
+.form {
+    height: 100vh;
+    width: 100vw;
+    background: url('./img/Mario_and_Adrian_A.jpg');
+    background-size: cover;
+}
+
 .tableform {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,7 +164,21 @@ ul {
     background-color: #495E57;
     color: #F4CE14;
     padding-top: 20px;
+    width: 40%;
+    height: 89vh;
+    margin-left: 20px;
+    margin-right: auto;
+    padding-top: 30px;
 }
+
+#table {
+    padding-bottom: 50px;
+}
+
+.test {
+    padding-top: 15px;
+}
+
 
 input, select {
     width: 250px;
@@ -132,4 +195,122 @@ label {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.special-dishes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.special-dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+  }
+  
+
+.dish {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    border: 2px solid #F4CE14;
+    background-color: #495E57;
+    width: 95%;
+    /* align-items: center; */
+    /* text-align: center; */
+    /* margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0; */
+    color: white;
+}
+
+.special-img {
+    width: 100%;
+    height: 250px;
+}
+
+.special-btn {
+    background-color: #F4CE14;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 12px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.testimonial {
+    border: 1px solid #495E57;
+    height: 200px;
+    width: 300px;
+    border-radius: 12px;
+    background-color: #495E57;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.reviews {
+    margin-top: 40px;
+}
+
+.testimonial img {
+    margin-top:50px;
+}
+
+.star {
+    width: 200px;
+    height: 50px;
+}
+
+.about {
+    background-color: #F4CE14;
+}
+
+.about2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.about-img-div {
+    height: 100%;
+    width: 400px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.about-img{
+    height: 100%;
+    width: 100%;
+    margin-right: 0;
+}
+
+.footer {
+    background-color: #495E57;
+    height: 80px;
+    color: white;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-img-div {
+    height: 30px;
+    width: 200px;
+    margin: auto;
+}
+
+.footer-img {
+    height: 100%;
+    width: 100%;
+}
+
+.footer-text {
+    text-align: center;
 }
